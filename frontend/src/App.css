@@ -1,0 +1,78 @@
+.app-shell {
+  background:
+    radial-gradient(circle at top left, #dbeafe 0%, rgba(219, 234, 254, 0) 35%),
+    radial-gradient(circle at top right, #ede9fe 0%, rgba(237, 233, 254, 0) 35%),
+    #f8fafc;
+}
+
+.glass-card {
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.dark-theme .glass-card {
+  background: rgba(15, 23, 42, 0.86);
+  border: 1px solid rgba(71, 85, 105, 0.55);
+}
+
+.dark-theme .text-slate-900 {
+  color: #f1f5f9 !important;
+}
+
+.dark-theme .text-slate-800 {
+  color: #e2e8f0 !important;
+}
+
+.dark-theme .text-slate-700,
+.dark-theme .text-slate-600,
+.dark-theme .text-slate-500 {
+  color: #cbd5e1 !important;
+}
+
+.dark-theme .bg-white,
+.dark-theme .bg-slate-50,
+.dark-theme .bg-blue-50,
+.dark-theme .bg-violet-50,
+.dark-theme .bg-emerald-50,
+.dark-theme .bg-rose-50 {
+  background-color: rgba(30, 41, 59, 0.88) !important;
+}
+
+.dark-theme .border-slate-200,
+.dark-theme .border-slate-100,
+.dark-theme .border-blue-100,
+.dark-theme .border-violet-100,
+.dark-theme .border-emerald-100,
+.dark-theme .border-rose-100 {
+  border-color: rgba(100, 116, 139, 0.45) !important;
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.45s ease-out;
+}
+
+.pulse-soft {
+  animation: pulseSoft 1.8s ease-in-out infinite;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseSoft {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.65;
+  }
+}
